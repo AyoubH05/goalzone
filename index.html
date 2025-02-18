@@ -6,23 +6,57 @@
     <title>Goal Zone</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             color: #333;
         }
         h1 {
-            color: #0066cc;
+            color: #1E88E5;
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
         p {
-            font-size: 20px;
+            font-size: 1.5rem;
             color: #555;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .button {
+            background-color: #1E88E5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #1565C0;
         }
     </style>
 </head>
 <body>
-    <h1>مرحبا بك في Goal Zone!</h1>
-    <p>هذا الموقع مخصص لعشاق كرة القدم.</p>
+    <div class="container">
+        <h1>مرحبا بك في Goal Zone!</h1>
+        <p>هذا الموقع مخصص لعشاق كرة القدم. هنا ستجد كل ما يتعلق بأخبار الكرة واللاعبين.</p>
+        <button class="button" onclick="window.location.href='https://www.example.com';">إبدأ الآن</button>
+    </div>
 </body>
 </html>
-
