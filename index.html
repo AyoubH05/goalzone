@@ -2,34 +2,61 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GOAL ZONE</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- إضافة Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .navbar {
+            background-color: black;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            padding: 50px 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <!-- شريط القوائم -->
-    <header>
-        <nav class="navbar">
-            <h1>GOAL ZONE</h1>
-            <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">الأخبار</a></li>
-                <li><a href="#">المباريات</a></li>
-                <li><a href="#">الفرق</a></li>
-            </ul>
-        </nav>
-        <div class="separator"></div> <!-- الشريط الأزرق الفاصل -->
-    </header>
-    
-    <!-- الصورة الرئيسية -->
-    <section class="hero">
-        <div class="hero-image"></div>
-        <div class="hero-text">
+
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">GOAL ZONE</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">الأخبار</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">المباريات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">الفرق</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- الواجهة الرئيسية -->
+    <div class="container mt-5">
+        <div class="hero">
             <h2>كل جديد كرة القدم في مكان واحد</h2>
             <p>تابع آخر الأخبار والتحديثات الحصرية</p>
+            <a href="#" class="btn btn-dark">ابدأ الآن</a>
         </div>
-    </section>
-    
-    <script src="script.js"></script>
+    </div>
+
+    <!-- سكريبت Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
