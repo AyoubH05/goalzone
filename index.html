@@ -1,85 +1,33 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOAL ZONE</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Goal Zone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">GOAL ZONE</div>
-        <nav>
-            <ul>
+    <!-- شريط القوائم -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">GOAL ZONE</div>
+            <ul class="nav-menu">
                 <li><a href="#">الرئيسية</a></li>
                 <li><a href="#">الأخبار</a></li>
-                <li><a href="#">السياسات</a></li>
-                <li><a href="#">أبرز الفوق</a></li>
+                <li><a href="#">المباريات</a></li>
+                <li><a href="#">أبرز الفرق</a></li>
             </ul>
-        </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="بحث...">
-            <button>بحث</button>
         </div>
-    </header>
-
-    <section class="breaking-news">
-        <marquee>أحدث الأخبار عن الدوري...</marquee>
+    </nav>
+    
+    <!-- الشريط الأزرق الفاصل -->
+    <div class="separator"></div>
+    
+    <!-- القسم الرئيسي -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>أخبار كرة القدم هنا</h1>
+        </div>
     </section>
-
-    <main>
-        <section class="main-news">
-            <article class="featured-news">
-                <img src="image1.jpg" alt="Featured News">
-                <h2>عنوان الخبر الرئيسي</h2>
-                <p>ملخص قصير عن الخبر الرئيسي...</p>
-            </article>
-            <div class="news-cards">
-                <article class="news-card">
-                    <img src="image2.jpg" alt="News 1">
-                    <h3>عنوان الخبر 1</h3>
-                    <p>ملخص قصير...</p>
-                </article>
-                <article class="news-card">
-                    <img src="image3.jpg" alt="News 2">
-                    <h3>عنوان الخبر 2</h3>
-                    <p>ملخص قصير...</p>
-                </article>
-            </div>
-        </section>
-
-        <aside class="sidebar">
-            <section class="important-news">
-                <h3>أهم الأخبار</h3>
-                <ul>
-                    <li><a href="#">خبر 1</a></li>
-                    <li><a href="#">خبر 2</a></li>
-                </ul>
-            </section>
-            <section class="quick-links">
-                <h3>روابط سريعة</h3>
-                <ul>
-                    <li><a href="#">أرشيف الأخبار</a></li>
-                    <li><a href="#">المقالات</a></li>
-                </ul>
-            </section>
-        </aside>
-    </main>
-
-    <footer>
-        <div class="footer-links">
-            <a href="#">سياسة الخصوصية</a>
-            <a href="#">شروط الاستخدام</a>
-            <a href="#">اتصل بنا</a>
-        </div>
-        <div class="social-media">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-        </div>
-        <div class="copyright">
-            © 2025 GOAL ZONE. جميع الحقوق محفوظة.
-        </div>
-    </footer>
 </body>
 </html>
