@@ -4,20 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal Zone</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- كود CSS داخل HTML لحل مشكلة تحميل style.css -->
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            background-color: black;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-menu li {
+            display: inline;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .separator {
+            height: 3px;
+            background-color: darkblue;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .hero h1 {
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
     <!-- شريط القوائم -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">GOAL ZONE</div>
-            <ul class="nav-menu">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">الأخبار</a></li>
-                <li><a href="#">المباريات</a></li>
-                <li><a href="#">أبرز الفرق</a></li>
-            </ul>
-        </div>
+        <div class="logo">GOAL ZONE</div>
+        <ul class="nav-menu">
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">الأخبار</a></li>
+            <li><a href="#">المباريات</a></li>
+            <li><a href="#">أبرز الفرق</a></li>
+        </ul>
     </nav>
     
     <!-- الشريط الأزرق الفاصل -->
