@@ -4,137 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal Zone</title>
-    <style>
-        /* استيراد الخط الاحترافي */
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
-
-        /* تعيين أنماط الصفحة */
-        body {
-            margin: 0;
-            font-family: 'Tajawal', sans-serif;
-            background-color: #000;
-            color: white;
-        }
-
-        /* شريط القوائم */
-        .navbar {
-            background-color: #000;
-            padding: 15px 0;
-            text-align: right;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 50px;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .nav-menu {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-menu li {
-            margin-left: 20px; /* زيادة التباعد بين العناصر */
-        }
-
-        .nav-menu a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .nav-menu a:hover {
-            color: #1E90FF; /* تغيير لون الروابط عند تمرير الماوس */
-        }
-
-        /* الشريط الأزرق الفاصل */
-        .separator {
-            width: 100%;
-            height: 2px;
-            background-color: #1E90FF;
-        }
-
-        /* قسم العنوان */
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .hero h1 {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        /* قسم الأخبار */
-        .news-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 40px 50px;
-        }
-
-        .news-item {
-            background-color: #111;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .news-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-        }
-
-        .news-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .news-content {
-            padding: 15px;
-        }
-
-        .news-content h3 {
-            margin: 10px 0;
-            font-size: 20px;
-        }
-
-        .news-content p {
-            font-size: 16px;
-            color: #bbb;
-        }
-
-        /* تصميم متجاوب */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-            .nav-menu {
-                margin-top: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- شريط الأخبار العاجلة -->
+    <div class="breaking-news">
+        <marquee>⚡ آخر الأخبار: انتقالات اللاعبين | نتائج المباريات | تصريحات المدربين</marquee>
+    </div>
+    
     <!-- شريط القوائم -->
     <nav class="navbar">
-        <div class="logo">GOAL ZONE</div>
-        <ul class="nav-menu">
-            <li><a href="#">الرئيسية</a></li>
-            <li><a href="#">الأخبار</a></li>
-            <li><a href="#">المباريات</a></li>
-            <li><a href="#">أبرز الفرق</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">GOAL ZONE</div>
+            <ul class="nav-menu">
+                <li><a href="#">نتائج المباريات</a></li>
+                <li><a href="#">أبرز الفرق</a></li>
+                <li><a href="#">أبرز الدوريات</a></li>
+                <li><a href="#">آخر الأخبار</a></li>
+                <li><a href="#">الرئيسية</a></li>
+            </ul>
+        </div>
     </nav>
     
     <!-- الشريط الأزرق الفاصل -->
@@ -142,34 +31,63 @@
     
     <!-- القسم الرئيسي -->
     <section class="hero">
-        <h1>أخبار كرة القدم هنا</h1>
+        <div class="hero-content">
+            <h1>أخبار كرة القدم هنا</h1>
+        </div>
     </section>
-
+    
     <!-- قسم الأخبار -->
     <section class="news-section">
-        <div class="news-item">
-            <img src="https://via.placeholder.com/400" alt="خبر 1">
-            <div class="news-content">
+        <h2>آخر الأخبار</h2>
+        <div class="news-container">
+            <div class="news-card">
+                <img src="news1.jpg" alt="خبر 1">
                 <h3>عنوان الخبر الأول</h3>
-                <p>ملخص سريع عن هذا الخبر.</p>
+                <p>وصف مختصر عن الخبر الأول...</p>
             </div>
-        </div>
-
-        <div class="news-item">
-            <img src="https://via.placeholder.com/400" alt="خبر 2">
-            <div class="news-content">
+            <div class="news-card">
+                <img src="news2.jpg" alt="خبر 2">
                 <h3>عنوان الخبر الثاني</h3>
-                <p>ملخص سريع عن هذا الخبر.</p>
-            </div>
-        </div>
-
-        <div class="news-item">
-            <img src="https://via.placeholder.com/400" alt="خبر 3">
-            <div class="news-content">
-                <h3>عنوان الخبر الثالث</h3>
-                <p>ملخص سريع عن هذا الخبر.</p>
+                <p>وصف مختصر عن الخبر الثاني...</p>
             </div>
         </div>
     </section>
+    
+    <!-- قسم نتائج المباريات الحية -->
+    <section class="live-scores">
+        <h2>النتائج الحية</h2>
+        <div class="scores-ticker">
+            <marquee>برشلونة 2 - 1 ريال مدريد | مانشستر سيتي 3 - 0 ليفربول | يوفنتوس 1 - 1 ميلان</marquee>
+        </div>
+    </section>
+    
+    <!-- قسم الفيديوهات -->
+    <section class="videos-section">
+        <h2>أبرز الفيديوهات</h2>
+        <div class="video-container">
+            <div class="video-card">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                </video>
+                <h3>ملخص مباراة برشلونة وريال مدريد</h3>
+            </div>
+            <div class="video-card">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                </video>
+                <h3>تحليل أداء اللاعبين في الدوري الإنجليزي</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- زر الوضع الليلي -->
+    <button id="dark-mode-toggle">تبديل الوضع الليلي</button>
+    
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
