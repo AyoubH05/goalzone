@@ -4,31 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal Zone</title>
-    <link rel="stylesheet" href="style.css">
+
     <style>
+        /* تعيين الخط والتنسيق الأساسي */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* لون خلفية الصفحة */
         body {
-            background-color: red;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        /* شريط القوائم */
+        .navbar {
+            background-color: black;
+            padding: 15px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        /* اسم الموقع */
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        /* القائمة */
+        .nav-menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-menu li {
+            margin-left: 20px;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-menu li a:hover {
+            color: #007bff;
+        }
+
+        /* الشريط الأزرق الفاصل */
+        .separator {
+            height: 3px;
+            background-color: darkblue;
+        }
+
+        /* قسم الأخبار */
+        .hero {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 28px;
         }
     </style>
+
 </head>
 <body>
-    <!-- شريط الأخبار العاجلة -->
-    <div class="breaking-news">
-        <marquee>⚡ آخر الأخبار: انتقالات اللاعبين | نتائج المباريات | تصريحات المدربين</marquee>
-    </div>
-    
     <!-- شريط القوائم -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">GOAL ZONE</div>
-            <ul class="nav-menu" style="text-align: left;">
-                <li><a href="#">نتائج المباريات</a></li>
-                <li><a href="#">أبرز الفرق</a></li>
-                <li><a href="#">أبرز الدوريات</a></li>
-                <li><a href="#">آخر الأخبار</a></li>
-                <li><a href="#">الرئيسية</a></li>
-            </ul>
-        </div>
+        <div class="logo">GOAL ZONE</div>
+        <ul class="nav-menu">
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">الأخبار</a></li>
+            <li><a href="#">المباريات</a></li>
+            <li><a href="#">أبرز الفرق</a></li>
+        </ul>
     </nav>
     
     <!-- الشريط الأزرق الفاصل -->
@@ -40,58 +100,5 @@
             <h1>أخبار كرة القدم هنا</h1>
         </div>
     </section>
-    
-    <!-- قسم الأخبار -->
-    <section class="news-section">
-        <div class="news-container">
-            <div class="news-card">
-                <img src="news1.jpg" alt="خبر 1">
-                <h3>عنوان الخبر الأول</h3>
-                <p>وصف مختصر عن الخبر الأول...</p>
-            </div>
-            <div class="news-card">
-                <img src="news2.jpg" alt="خبر 2">
-                <h3>عنوان الخبر الثاني</h3>
-                <p>وصف مختصر عن الخبر الثاني...</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- قسم نتائج المباريات الحية -->
-    <section class="live-scores">
-        <h2>النتائج الحية</h2>
-        <div class="scores-ticker">
-            <marquee>برشلونة 2 - 1 ريال مدريد | مانشستر سيتي 3 - 0 ليفربول | يوفنتوس 1 - 1 ميلان</marquee>
-        </div>
-    </section>
-    
-    <!-- قسم الفيديوهات -->
-    <section class="videos-section">
-        <h2>أبرز الفيديوهات</h2>
-        <div class="video-container">
-            <div class="video-card">
-                <video controls>
-                    <source src="video1.mp4" type="video/mp4">
-                </video>
-                <h3>ملخص مباراة برشلونة وريال مدريد</h3>
-            </div>
-            <div class="video-card">
-                <video controls>
-                    <source src="video2.mp4" type="video/mp4">
-                </video>
-                <h3>تحليل أداء اللاعبين في الدوري الإنجليزي</h3>
-            </div>
-        </div>
-    </section>
-    
-    <!-- زر الوضع الليلي -->
-    <button id="dark-mode-toggle">تبديل الوضع الليلي</button>
-    
-    <script>
-        const toggleButton = document.getElementById('dark-mode-toggle');
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
 </body>
 </html>
